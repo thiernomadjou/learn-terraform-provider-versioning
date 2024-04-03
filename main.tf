@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 provider "aws" {
-  region = "us-eat-1"
+  region = "us-east-1"
 }
 
 resource "random_pet" "petname" {
