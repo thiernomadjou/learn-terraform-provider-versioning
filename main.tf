@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 provider "aws" {
-  region = "us-west-2"
+  region = "us-eat-1"
 }
 
 resource "random_pet" "petname" {
@@ -12,7 +12,7 @@ resource "random_pet" "petname" {
 
 resource "aws_s3_bucket" "sample" {
   bucket = random_pet.petname.id
-
+  
   tags = {
     public_bucket = false
   }
